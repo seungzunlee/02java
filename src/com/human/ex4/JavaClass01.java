@@ -5,28 +5,28 @@ public class JavaClass01 {
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
 		
-//		System.out.println("몇월 인지 입력하시오.");
-//		String input1 = sc.nextLine();
-//		
-//		
-//		switch(input1) {
-//		case "1": case "3": case "5": case "7": case "8": case "10": case "12":
-//			System.out.println("31일");
-//			break;
-//			
-//		case "2":
-//			System.out.println("28일");
-//			break;
-//			
-//		case "4": case "6": case "9": case "11":
-//			System.out.println("30일");
-//			break;
-//			
-//		default:
-//			System.out.println("없는 달입니다.");
-//			break;
-//			
-//		}
+		System.out.println("몇월 인지 입력하시오.");
+		String input1 = sc.nextLine();
+		
+		
+		switch(input1) {
+		case "1": case "3": case "5": case "7": case "8": case "10": case "12":
+			System.out.println("31일");
+			break;
+			
+		case "2":
+			System.out.println("28일");
+			break;
+			
+		case "4": case "6": case "9": case "11":
+			System.out.println("30일");
+			break;
+			
+		default:
+			System.out.println("없는 달입니다.");
+			break;
+			
+		}
 		
 		//비밀번호가 		111이고 		key는 "108호 키"이다.
 		int num=111;
