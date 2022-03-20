@@ -5,7 +5,7 @@ public class JavaClass07 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("문제0.");
+		System.out.println("0번");
 		
 		int n1 = 3, n2 = 3, sum0 = 0;
 		
@@ -28,7 +28,7 @@ public class JavaClass07 {
 		} System.out.println(sum0);
 		System.out.println();
 		
-		System.out.println("문제1.");
+		System.out.println("1번");
 		int a=2, b=1;
 		b++;
 		System.out.println(String.format("a=%d, b=%d", a, b));
@@ -50,7 +50,7 @@ public class JavaClass07 {
 		System.out.println(String.format("a2=%d, b2=%d", a2, b2));
 		System.out.println();
 		
-		System.out.println("문제2.");
+		System.out.println("2번");
 		System.out.println("100의 약수:");
 		for(int i =1; i<101; i++) {
 			if(100%i==0) {
@@ -59,7 +59,7 @@ public class JavaClass07 {
 		}
 		System.out.println();
 		
-		System.out.println("문제3.");	
+		System.out.println("3번");	
 		System.out.println("숫자를 입력하시오.");
 		int input1 = Integer.parseInt(sc.nextLine());
 		System.out.println("숫자를 입력하시오.");
@@ -76,7 +76,7 @@ public class JavaClass07 {
 		}
 		
 		System.out.println();
-		System.out.println("문제4.");
+		System.out.println("4번");
 		System.out.println("숫자를 입력하시오.");
 		int input3 = Integer.parseInt(sc.nextLine());
 		System.out.println("숫자를 입력하시오.");
@@ -101,7 +101,7 @@ public class JavaClass07 {
 		System.out.println("최대공약수: " + max4);
 		System.out.println();
 		
-		System.out.println("문제5.");
+		System.out.println("5번");
 		int sum = 0;
 		while(sum<=100) {
 			System.out.println("숫자를 입력하시오.");
@@ -111,7 +111,7 @@ public class JavaClass07 {
 		System.out.println("100이 넘었습니다.");
 		System.out.println();
 		
-		System.out.println("문제6.");
+		System.out.println("6번");
 		int g6 = 0, b6 = 0;
 		for(int i = 0; i< 3; i++) {
 			System.out.println("1~10사이의 숫자를 3번 입력하시오.");
@@ -125,7 +125,7 @@ public class JavaClass07 {
 		System.out.println(String.format("제대로 입력한 횟수: %d , 잘못 입력한 횟수: %d", g6, b6));
 		System.out.println();
 		
-		System.out.println("문제7.");	
+		System.out.println("7번");	
 		System.out.println("첫번째 수를 입력하시오.");
 		int input71 = Integer.parseInt(sc.nextLine());
 		System.out.println("두번째 수를 입력하시오.");
@@ -151,7 +151,7 @@ public class JavaClass07 {
 		System.out.println();
 		System.out.println();
 		
-		System.out.println("문제8.");	
+		System.out.println("8번");	
 		System.out.println("첫 번째 수를 입력하시오.");
 		int input81 = Integer.parseInt(sc.nextLine());
 		System.out.println("두 번째 수를 입력하시오.");
@@ -175,7 +175,7 @@ public class JavaClass07 {
 		} 
 		System.out.println();
 		
-		System.out.println("문제9.");
+		System.out.println("9번");
 		
 		int count = 0;
 		for(int i=0; i< 5; i++) {
@@ -316,17 +316,20 @@ public class JavaClass07 {
 		System.out.println(String.format("%d의 배수의 개수는 %d개이다.", input17, 1000/input17));
 		System.out.println();
 		
-		System.out.println("18번");			//다시
+		System.out.println("18번");		
 		System.out.println("행을 입력하시오.");
 		int a18 =Integer.parseInt(sc.nextLine());
 		System.out.println("열 입력하시오.");
 		int b18 =Integer.parseInt(sc.nextLine());
-		for(int i=1; i<a18; i++) {
-			for(int j=1; j<b18; j++) {
-				System.out.println(j);
-				if(b18==j) {
-					break;
+		int num18 = 1;
+		for(int i=1; i<=a18; i++) {
+			for(int j=1; j<= b18; j++) {
+				System.out.printf("%2d ",num18);
+				num18++;
 				}
+			System.out.println();
+			if(num18 > 100) {
+				break;
 			}
 		}
 		
